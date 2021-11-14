@@ -1,0 +1,16 @@
+.navbars 
+    nav.navbar.navbar-expand-lg
+        .container
+            a.navbar-brand(href='/') TELbazar.uz
+            form.d-flex.formFor
+            .collapse.navbar-collapse#navbarSupportedContent
+            ul.navbar-nav
+                li.nav-item
+            if(!login)
+                a.nav-link(href='/register') Royhatdan otish
+                a.nav-link(href='/register/login') kirsh
+            else
+                a.nav-link(href='/add') Mahsulot qoshish  
+                a.nav-link(href="register/logout") chiqish 
+                a.nav-link(href="/category") kategoriyalar 
+
